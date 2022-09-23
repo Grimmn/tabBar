@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86D261A028DC36620074A7EB /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 86D2619F28DC36620074A7EB /* iPhoneNumberField */; };
 		86D3994928DB514A0030A7E2 /* tabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3994828DB514A0030A7E2 /* tabBarApp.swift */; };
 		86D3994B28DB514A0030A7E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3994A28DB514A0030A7E2 /* ContentView.swift */; };
 		86D3994D28DB514C0030A7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D3994C28DB514C0030A7E2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		86D3995A28DB514C0030A7E2 /* tabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3995928DB514C0030A7E2 /* tabBarTests.swift */; };
 		86D3996428DB514C0030A7E2 /* tabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3996328DB514C0030A7E2 /* tabBarUITests.swift */; };
 		86D3996628DB514C0030A7E2 /* tabBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3996528DB514C0030A7E2 /* tabBarUITestsLaunchTests.swift */; };
+		86D3997428DB52350030A7E2 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 86D3997328DB52350030A7E2 /* SlidingTabView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D3997428DB52350030A7E2 /* SlidingTabView in Frameworks */,
+				86D261A028DC36620074A7EB /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = tabBar;
+			packageProductDependencies = (
+				86D3997328DB52350030A7E2 /* SlidingTabView */,
+				86D2619F28DC36620074A7EB /* iPhoneNumberField */,
+			);
 			productName = tabBar;
 			productReference = 86D3994528DB514A0030A7E2 /* tabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 86D3993C28DB514A0030A7E2;
+			packageReferences = (
+				86D3997228DB52350030A7E2 /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+				86D2619E28DC36620074A7EB /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = 86D3994628DB514A0030A7E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +595,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86D2619E28DC36620074A7EB /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		86D3997228DB52350030A7E2 /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86D2619F28DC36620074A7EB /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D2619E28DC36620074A7EB /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+		86D3997328DB52350030A7E2 /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D3997228DB52350030A7E2 /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86D3993D28DB514A0030A7E2 /* Project object */;
 }
